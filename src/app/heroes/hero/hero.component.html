@@ -14,5 +14,10 @@
 
 </dl>
 
-<button class="btn btn-primary mx-2" (click)="changeName()">Change name</button>
-<button class="btn btn-primary mx-2" (click)="changeAge()">Change age</button>
+<button *ngIf="name !== 'Thor'" class="btn btn-primary mx-2" (click)="changeName()">
+  Change name
+</button>
+
+<button *ngIf="age === 45" class="btn btn-primary mx-2" (click)="changeAge()">Change age</button>
+
+<button (click)="resetForm()">Reset form</button>
