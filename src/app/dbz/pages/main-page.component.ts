@@ -20,4 +20,14 @@ export class MainPage {
       power: 8000,
     },
   ];
+
+  onAddNewCharacter(character: Character): void {
+    this.characters.push(character);
+  }
+
+  deleteCurrentCharacter(id: number): void {
+    console.log(this.characters);
+    this.characters.splice(id, 1);
+    console.log(this.characters);
+  }
 }
