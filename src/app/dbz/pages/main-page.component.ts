@@ -15,5 +15,9 @@ export class MainPage {
       name: 'Goku',
       power: 10000,
     },
+    {
+      name: 'Vegeta',
+      power: 8000,
+    },
   ];
 }
